@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Keshika.K</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Google Fonts (Readable & Attractive) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <style>
+    body {
+      scroll-behavior: smooth;
+      font-family: 'Poppins', sans-serif;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') 
+        no-repeat center center/cover;
+      color: white;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.5);
+    }
+    .hero .container {
+      position: relative;
+      z-index: 2;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 600;
+    }
+    .hero p {
+      font-size: 1.25rem;
+    }
+    .about img {
+      max-width: 250px;
+      border-radius: 50%;
+    }
+    .project-card {
+      transition: transform 0.3s;
+    }
+    .project-card:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background: #212529;
+      color: #aaa;
+      padding: 20px 0;
+    }
+    footer a {
+      color: #aaa;
+      text-decoration: none;
+    }
+    footer a:hover {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Keshika.K</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>Hello, I'm <span class="text-warning">Keshika.K</span></h1>
+      <p>B.Com Student | Future Collector | Dreaming to Serve & Lead People</p>
+      <a href="#projects" class="btn btn-primary mt-3">View My Work</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about py-5">
+    <div class="container text-center">
+      <h2>About Me</h2>
+      <p class="text-muted">A little introduction about who I am and my dreams.</p>
+      <img src="https://via.placeholder.com/250" alt="Profile Picture" class="my-3">
+      <p>
+        I am <strong>Keshika.K</strong>, a <strong>B.Com student</strong>. After my UG degree, 
+        I am planning to complete my Master’s degree.  
+        My ambition is to become a <strong>great Collector</strong> in the future — serving people, 
+        guiding them in the right path, and leading society in the best way possible.  
+      </p>
+      <p>
+        Apart from my academic goals, I enjoy <em>singing, dancing, gardening, and helping others</em>.  
+        My vision is to balance personal growth with social service, making a meaningful contribution to the community.  
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">My Projects</h2>
+      <div class="row g-4">
+        
+        <!-- Project 1 -->
+        <div class="col-md-4">
+          <div class="card project-card h-100">
+            <img src="https://via.placeholder.com/400x200?text=Accounting+System" class="card-img-top" alt="Accounting System">
+            <div class="card-body">
+              <h5 class="card-title">Accounting Management System</h5>
+              <p class="card-text">A project that demonstrates how businesses can manage financial records digitally for accuracy and efficiency.</p>
+              <a href="#" class="btn btn-outline-primary" target="_blank">View Details</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="col-md-4">
+          <div class="card project-card h-100">
+            <img src="https://via.placeholder.com/400x200?text=Business+Statistics" class="card-img-top" alt="Business Statistics">
+            <div class="card-body">
+              <h5 class="card-title">Business Statistics Analysis</h5>
+              <p class="card-text">A data-driven project analyzing real-world business statistics to make informed decisions for growth and planning.</p>
+              <a href="#" class="btn btn-outline-primary" target="_blank">View Details</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 3 -->
+        <div class="col-md-4">
+          <div class="card project-card h-100">
+            <img src="https://via.placeholder.com/400x200?text=Portfolio+Management" class="card-img-top" alt="Portfolio Management">
+            <div class="card-body">
+              <h5 class="card-title">Portfolio Management</h5>
+              <p class="card-text">A project exploring investment strategies, risk management, and portfolio diversification techniques.</p>
+              <a href="#" class="btn btn-outline-primary" target="_blank">View Details</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Contact Me</h2>
+      <p class="text-center text-muted">Feel free to connect with me for guidance, collaboration, or just a friendly hello ??</p>
+      
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" id="name" class="form-control" required>
+            </div>
+            
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" class="form-control" required>
+            </div>
+            
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" class="form-control" rows="4" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+          </form>
+          
+          <!-- Social Icons -->
+          <div class="text-center mt-4">
+            <a href="#" class="me-3"><i class="bi bi-linkedin fs-4"></i></a>
+            <a href="#" class="me-3"><i class="bi bi-github fs-4"></i></a>
+            <a href="#"><i class="bi bi-twitter fs-4"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="container">
+      <p>&copy; 2025 Keshika.K | <a href="#home">Back to top</a></p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
